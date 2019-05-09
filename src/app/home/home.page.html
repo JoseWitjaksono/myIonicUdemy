@@ -1,14 +1,119 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark" text-center>
     <ion-title>
-      Ionic Blank
+      LEARN IONIC
     </ion-title>
+    <ion-icon slot="start" name="ios-apps" (click)="openLoading()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content no-padding>
+  <ion-slides pager="true">
+    <ion-slide>
+      <img src="../../assets/raccoon-face-vector-clipart.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/raccoon-vector-tough-2.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/angry-1294363_960_720.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/28bcad1d766bcbbe96e451410adb1e79-raccoon-animal-cartoon-by-vexels.png" alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" text-center>
+        <ion-card color="dark" (click)="openPage()">
+          <ion-card-header>
+            <ion-label>Raccoon</ion-label>
+          </ion-card-header>
+          <img src="../../assets/raccoon-head.png" alt="">
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" text-center>
+        <ion-card color="dark" (click)="openPage()">
+          <ion-card-header>
+              <ion-label>Raccoon</ion-label>
+          </ion-card-header>
+          <img src="../../assets/raccoon-head.png" alt="">
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" text-center>
+        <ion-card color="dark" (click)="openPage()">
+          <ion-card-header>
+            <ion-label>Raccoon</ion-label>
+          </ion-card-header>
+          <img src="../../assets/raccoon-head.png" alt="">
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+
+    <ion-item (click)="openToast()">
+    <ion-thumbnail slot="start">
+      <img src="../../assets/raccoon-vector-tough-2.png" />
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Raccoon</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam commodo semper mattis. Morbi eget dui diam. Vivamus pharetra tristique dui in gravida. </p>
+      <ion-badge color="primary">Hello</ion-badge>
+    </ion-label>
+    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="openToast()">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/raccoon-vector-tough-2.png" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Raccoon</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam commodo semper mattis. Morbi eget dui diam. Vivamus pharetra tristique dui in gravida. </p>
+        <ion-badge color="primary">Hello</ion-badge>
+      </ion-label>
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="openToast()">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/raccoon-vector-tough-2.png" />
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Raccoon</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam commodo semper mattis. Morbi eget dui diam. Vivamus pharetra tristique dui in gravida. </p>
+          <ion-badge color="primary">Hello</ion-badge>
+        </ion-label>
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="openToast()">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/raccoon-vector-tough-2.png" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Raccoon</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam commodo semper mattis. Morbi eget dui diam. Vivamus pharetra tristique dui in gravida. </p>
+        <ion-badge color="primary">Hello</ion-badge>
+      </ion-label>
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-item>  
+
+    <ion-item (click)="openToast()">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/raccoon-vector-tough-2.png" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Raccoon</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam commodo semper mattis. Morbi eget dui diam. Vivamus pharetra tristique dui in gravida. </p>
+        <ion-badge color="primary">Hello</ion-badge>
+      </ion-label>
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-item>   
+
+  </ion-list>
+
 </ion-content>
