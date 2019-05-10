@@ -4,6 +4,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+<<<<<<< HEAD
+=======
+  { path: 'add-modal', loadChildren: './add-modal/add-modal.module#AddModalPageModule' },
+>>>>>>> Add SQLite CRUD Feature
 ];
 
 @NgModule({

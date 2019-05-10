@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add New List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label position="fixed">Title</ion-label>
+        <ion-input [(ngModel)]="newItem.title"></ion-input>
+      </ion-item>
+     
+      <ion-item>
+        <ion-label position="fixed">Value</ion-label>
+        <ion-input [(ngModel)]="newItem.value"></ion-input>
+      </ion-item>
+     
+      <ion-button expand="full" (click)="addItem()">Add Item!</ion-button>
+</ion-content>

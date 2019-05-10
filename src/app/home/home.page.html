@@ -3,6 +3,7 @@
     <ion-title>
       LEARN IONIC
     </ion-title>
+<<<<<<< HEAD
     <ion-icon slot="start" name="ios-apps" (click)="openLoading()"></ion-icon>
   </ion-toolbar>
 </ion-header>
@@ -116,4 +117,90 @@
 
   </ion-list>
 
+=======
+    <ion-icon slot="end" name="add" (click)="openModal()"></ion-icon>
+    <p *ngIf="dataReturned">{{dataReturned}}</p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Image</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-slides pager="true">
+          <ion-slide>
+            <img src="../../assets/raccoon-face-vector-clipart.png" alt="">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/raccoon-vector-tough-2.png" alt="">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/angry-1294363_960_720.png" alt="">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/28bcad1d766bcbbe96e451410adb1e79-raccoon-animal-cartoon-by-vexels.png" alt="">
+          </ion-slide>
+        </ion-slides>
+      
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4" text-center>
+              <ion-card color="dark" (click)="openPage()">
+                <ion-card-header>
+                  <ion-label>Raccoon</ion-label>
+                </ion-card-header>
+                <img src="../../assets/raccoon-head.png" alt="">
+              </ion-card>
+            </ion-col>
+            <ion-col size="4" text-center>
+              <ion-card color="dark" (click)="openPage()">
+                <ion-card-header>
+                    <ion-label>Raccoon</ion-label>
+                </ion-card-header>
+                <img src="../../assets/raccoon-head.png" alt="">
+              </ion-card>
+            </ion-col>
+            <ion-col size="4" text-center>
+              <ion-card color="dark" (click)="openPage()">
+                <ion-card-header>
+                  <ion-label>Raccoon</ion-label>
+                </ion-card-header>
+                <img src="../../assets/raccoon-head.png" alt="">
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>My List</ion-card-subtitle>
+        </ion-card-header>
+            <ion-list #mylist>
+                <ion-item-sliding *ngFor="let item of items">
+            
+                <ion-item (click)="openToast()">
+                <ion-thumbnail slot="start">
+                  <img src="../../assets/raccoon-vector-tough-2.png" />
+                </ion-thumbnail>
+                <ion-label>
+                  <h2>{{ item.title }}</h2>
+                  <p>{{ item.value }}</p>
+                  <ion-badge color="primary">{{ item.modified | date:'short'}}</ion-badge>
+                </ion-label>
+                <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                </ion-item>
+            
+                <ion-item-options side="end">
+                    <ion-item-option color="secondary" (click)="updateItem(item)">Update</ion-item-option>
+                    <ion-item-option color="danger" (click)="deleteItem(item)">Delete</ion-item-option>
+                </ion-item-options>
+            
+                </ion-item-sliding>
+              </ion-list>
+      </ion-card>
+>>>>>>> Add SQLite CRUD Feature
 </ion-content>
